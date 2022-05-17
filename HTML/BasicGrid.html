@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Tutorials </title>
+    <style>
+        /* write all the grid property inside the grid {display} property  */
+        .container{
+            background-color: aliceblue;
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: repeat(3,auto);   
+            grid-template-rows: 2fr 3fr; /*this will applied in first two rows*/
+            grid-auto-rows: 5fr; /*this will only apply in the other rows remainin other than above syntax*/
+            /* the above syntax will make three column s which will take 1part of the screen and second column will take 2part of screen and third column willtake 3 part of screen this is in ratio 1:2:3  */
+            /* grid-template-columns: repeat ( 3,1fr); */
+
+            /* grid-gap: 2rem; */
+            /* this is no longer used thats why it is obsolete */
+        }
+        .item{
+            border: .5px solid red;
+            margin: 2px;
+            padding: 5px;
+            /* grid-template-columns: repeat (10,auto ); */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-11</div>
+        <div class="item">this is item-12</div>
+        <div class="item">this is item-13</div>
+        <div class="item">this is item-14</div>
+        <div class="item">this is item-15</div>
+    </div>
+</body>
+</html>

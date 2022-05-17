@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Loops in JavaScript</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        ul li{
+            border: 2px solid red;
+            box-shadow: 0 0 5px blue;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <ul>
+                <li>pen</li>
+                <li>pencil</li>
+                <li>mouse</li>
+                <li>keyboard</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let days='saturday';
+        switch (days) {
+            case 'sunday':
+                console.log("the day is sunday")
+                break;
+        
+            case 'monday':
+                console.log("the day is monday")
+                break;
+        
+            case 'tuesday':
+                console.log("the day is tuesday")
+                break;
+        
+            case 'wednesday':
+                console.log("the day is wednesday")
+                break;
+        
+            case 'thursday':
+                console.log("the day is thursday")
+                break;
+        
+            case 'friday':
+                console.log("the day is friday")
+                break;
+        
+            case 'saturday':
+                console.log("the day is saturday")
+                break;
+        
+            default:
+                console.log("you have chosen the wrong day.")
+                break;
+        }
+
+        let age=20;
+        if (age>19) {
+            console.log("You are eligible for applying to get your driving license.")
+        } else {
+            console.log("You are still kiddo apply after some year.")
+        }
+    </script>
+</body>
+</html>

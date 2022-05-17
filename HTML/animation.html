@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>animation</title>
+		<style>
+			.container {
+				display: flex;
+				background-color: yellow;
+				/* height: 500px;s */
+				/* width: 200px;
+            height: 200px; */
+				/* text-align: center;
+            justify-content: center; */
+				/* justify-content: center; */
+				align-items: center;
+				/* justify-content: space-evenly; */
+			}
+			.box {
+				position: relative;
+				/* flex-flow: row-reverse; */
+				/* right: 10px; */
+				/* text-align: center; */
+				/* justify-content: center; */
+				background-color: red;
+				color: bisque;
+				width: 100px;
+				height: 100px;
+				animation-name: aman;
+				/* animation-name: square; */
+				animation-duration: 2s;
+				animation-iteration-count: 2;
+				animation-fill-mode: forwards;
+			}
+			.box2 {
+				width: 150px;
+				height: 150px;
+				background-color: blue;
+				position: relative;
+				animation-name: square;
+				animation-duration: 2s;
+				animation-iteration-count: 2;
+				animation-fill-mode: forwards;
+			}
+			@keyframes aman {
+				from {
+					width: 100px;
+					color: rgb(136, 12, 12);
+					height: 100px;
+				}
+				to {
+					width: 150px;
+					color: rgb(255, 255, 255);
+					height: 150px;
+					background-color: blue;
+					/* top: 0px
+                left:500px; */
+				}
+			}
+			@keyframes square {
+				0% {
+					top: 0px;
+					left: 0px;
+				}
+				25% {
+					top: 300px;
+					left: 0px;
+				}
+				50% {
+					top: 300px;
+					left: 300px;
+				}
+				75% {
+					top: 0px;
+					left: 300px;
+				}
+				100% {
+					top: 0px;
+					left: 0px;
+					background-color: rgb(255, 0, 0);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- let us first create a box so that we can apply some animation over it -->
+		<div class="container">
+			<div class="box">This is first box inside the container.</div>
+		</div>
+		<div class="container">
+			<div class="box2">This is second box inside the container.</div>
+		</div>
+	</body>
+</html>

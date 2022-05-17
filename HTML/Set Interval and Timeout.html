@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval And Timeout</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            padding: 10px;
+            font-size: 23px;
+            color: aqua;
+            background-color: blanchedalmond;
+
+        }
+        #time {
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This site will show the TIME and it will be changing every second!</h1>
+    <div class="container">
+        Current Time: <span id="time"></span>
+    </div>
+</body>
+<script>
+    function displayTime() {
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime, 1000);
+
+    // setInterval this will allow the function to run over a repeatedly interval of time 
+    // setTimeout this will allow the function to execute once after the set timeout 
+    function greet(name) {
+        console.log("Hello," + name + " " + "It was nice meeting with you.")
+    }
+    setTimeout(greet, 3000);
+</script>
+
+</html>

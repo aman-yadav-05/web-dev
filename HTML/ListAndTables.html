@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and lists</title>
+    <style>
+        /* thead,tbody,th{
+            border: 1px solid black;
+        } */
+        /* #center{
+            width: 10%;
+            border: 1px solid black;
+        } */
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            border-radius: 2px;
+            background-color: rgb(150, 214, 193);
+        }
+
+        image {
+            padding-left: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- li is used for list  -->
+    <!-- ul is used for unordered list like bullet points -->
+    <ul type="square">
+        <h2>this is unordered list</h2>
+        <li>this is my first item of unordered list</li>
+        <li>this is my second item of unordered list</li>
+        <li>this is my third item of unordered list</li>
+    </ul>
+    <!-- orderd list will give a ordered list but neeed to defgine the type -->
+    <ol type="i">
+        <h2>this is ordered list</h2>
+        <li>this is my first item of ordered list</li>
+        <li>this is my second item of ordered list</li>
+        <ol>
+            <li>this is inside the list</li>
+            <li>this is inside the list</li>
+            <li>this is inside the list</li>
+        </ol>
+        <li>this is my third item of ordered list</li>
+
+    </ol>
+
+    <h3>html tables</h3>
+
+    <table>
+
+        <th colspan="3">result</td>
+            <tr>
+                <th>roll</th>
+                <th>name</th>
+                <th>sub</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>garima</td>
+                <td>maths</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>aman</td>
+                <td>cs</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>vibhakar</td>
+                <td>maths</td>
+            </tr>
+            <!-- <tr><pre>    </pre></tr>
+           <tr><pre>    </pre></tr>
+           <tr><pre>    </pre></tr>
+           -->
+
+    </table>
+    <br><br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+    <table>
+        <tr>
+            <td>Garima</td>
+            <td>b.sc.3rd sem</td>
+            <td>maths department</td>
+            <td>mob. no.-xxxxxxxxx</td>
+            <td>email id-xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+
+            <td colspan="3">Father's name: RAJESH GOPAL</td>
+            <td rowspan="3" colspan="2" id="image">place your image here</td>
+        </tr>
+        <tr>
+            <td colspan="3">Mother's name:MANJULA GOPAL </td>
+        </tr>
+        <tr>
+            <td colspan="3">address:santoshi nagar,ward no.4 Raipur(C.G.)</td>
+        </tr>
+    </table>
+</body>
+
+</html>

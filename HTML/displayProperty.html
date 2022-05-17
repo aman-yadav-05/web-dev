@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .image{
+            border:2px solid white;
+            width:50px;
+            border-radius: 10px;
+            display: block;
+            padding-top: 2px;
+            margin: auto;
+        }
+        .top{
+            border: 2px solid red;
+            width:1044px;
+            margin: auto;
+            border-radius: 2px;
+           
+        }
+        h3{
+            text-align: center;
+            margin:0px;
+        }
+        .header{
+            border: 2px double red;
+            width: 25%;
+            /* margin: auto; */
+            display: inline-block;
+            padding: 15px;
+            margin-top: 2px;
+            background-color: bisque;
+        }
+        .container{
+            width: 853px;
+            margin: 30px;
+            display: inline;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="display.jpg" alt="" class="image">
+        <h3 class="head">welcome to pdxaman</h3>
+    </header>
+    <div class="container">
+        <div class="header">
+        <h2 class="head">Heading</h2>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nobis tempora omnis dicta consequatur doloremque.</P>
+        </div>
+        <div class="header">
+        <h2 class="head">Heading</h2>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nobis tempora omnis dicta consequatur doloremque.</P>
+        </div>
+        <div class="header">
+        <h2 class="head">Heading</h2>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nobis tempora omnis dicta consequatur doloremque.</P>
+        </div>
+    </div>
+</body>
+</html>

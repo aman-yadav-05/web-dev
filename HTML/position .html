@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 1000px;
+        }
+        .head{
+            border: 2px solid rgb(46, 46, 13);
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+        #head1{
+            /* position: absolute; */
+            background-color: aliceblue;
+        }
+        #head2{
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+        }
+        #head3{
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        #head4{
+            position: sticky;
+            top: 2px;
+            left: 15px;
+            /* position: ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head" id="head1">1</div>
+        <div class="head" id="head2">2</div>
+        <div class="head" id="head3">3</div>
+        <div class="head" id="head4">4</div>
+    </div>
+</body>
+</html>

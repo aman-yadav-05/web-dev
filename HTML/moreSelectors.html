@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        h2{
+            text-align: center;
+            border: 2px solid red;
+        }
+        div{
+            border: 2px solid rgb(241, 101, 20);
+            color: brown;
+            background-color: rgb(235, 214, 214);
+            margin: 2px;
+        }
+        div li{
+            border: 2px solid red;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            margin: 2px;
+        }
+        div > p {
+            background-color: rgb(175, 34, 168);
+        }
+        div + p{
+            background-color: rgb(228, 181, 216);
+        }
+    </style>
+</head>
+<body>
+    <h2>This is heading of More On Selectors</h2>
+    <div class="container">
+        <div>
+            <ul>
+                <li><p>this is paragraph inside ul which is inside div which is inside container</p></li>
+            </ul>
+            <p>this is paragraph which is inside div</p>
+        </div>
+        <p>THis is paragraph inside container</p>
+    </div>
+    <p>this is the outer most paragrapgh</p>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox property</title>
+    <style>
+        .container {
+            border: 2px solid;
+            height: 300px;
+            display: flex;
+            /* this will change the display property of container to flex  */
+            /* let us use some flex property for container  */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+           /* flex-direction: column-reverse; */
+           flex-wrap: wrap;
+           /* this will wrap the flex items inside the flex container  */
+
+           /* now if we want to use direction and wrap in the same flex then we cccan write it as  */
+           flex-flow: row wrap;
+
+           /* justify-content: center; */
+           /* this will center all the flex items to center of the container  */
+           /* justify-content: space-around; */
+           justify-content: space-evenly;
+           align-items: center ;
+           /* this above both property will center the element or item of container to the centerrr from both x axis and y axis */
+
+           /* align-items: stretch;
+           this will vertically give even spaces */
+          
+        }
+
+        .item {
+         
+            border: 2px solid rgb(10, 9, 9);
+            margin: 2px;
+            background-color: orange;
+        }
+
+        /* let's see some flex property for flex items all this property should be used inside any specific items only  */
+        #item1{
+            flex-basis: 399px;
+            /* if direction is set to row then flex basis will help to set width  */
+            /* if direction is set to column then flex basis will help to set heightt  */
+            
+        }
+        /* #item2{
+
+        }
+        #item3{
+
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>this is flex boxing practice</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+    </div>
+</body>
+
+</html>

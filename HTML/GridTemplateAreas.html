@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                /* 'inside1 inside2 section aside' */
+                'footer footer footer footer';
+            grid-gap: 0.5rem;
+        }
+        #insideSection{
+            display: grid;
+            grid-template-areas: 
+            'inside1 inside1 inside2 inside2';
+        }
+
+        .bg {
+            border: 1px solid red;
+            background-color: lightblue;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            text-align: center;
+            /* text-align: justify; */
+            /* justify-content: space-evenly; */
+        }
+
+        #section {
+            grid-area: section;
+            text-align: center;
+        }
+
+        #aside {
+            grid-area: aside;
+            text-align: center;
+        }
+
+        #footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        #iS2{
+            grid-area: inside1;
+            background-color: red;
+            border: 2px solid white;
+        }
+        
+        #iS3{
+            border: 2px solid white;
+            grid-area: inside2;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="bg">
+            Home ContactUs About Feedback
+        </div>
+        <div id="section" class="bg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad aspernatur necessitatibus nesciunt. Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Ipsam, explicabo! Illum a amet vitae quis nobis qui pariatur
+            accusantium aliquam, delectus fuga unde.
+            <div  id="insideSection">
+                <div class="bg" id="iS2">this section is inside the section Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Distinctio doloremque dolores laboriosam.</div>
+                <div class="bg" id="iS3">this section is inside the section Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Distinctio doloremque dolores laboriosam.</div>
+            </div>
+        </div>
+        <div id="aside" class="bg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni dolorem
+            totam nam maxime repudiandae voluptates laudantium amet, corrupti quo voluptas error illum!</div>
+        <div id="footer" class="bg">&copy;all rights are reserved</div>
+    </div>
+
+</body>
+
+</html>

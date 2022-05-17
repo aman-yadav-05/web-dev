@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul class="nav">
+            <li>aman</li>
+            <li>nilima</li>
+            <li>prerna</li>
+            <li>ebenzer</li>
+            <li>abhay</li>
+        </ul>
+    </div>
+    <div class="container" id="main2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae harum doloremque eveniet sit. Architecto
+            delectus quis nobis cumque molestiae beatae voluptas accusamus exercitationem.</p>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let con = document.getElementsByClassName('container');
+        console.log(con);
+
+        let sel=document.querySelectorAll('.nav>li');
+        console.log("selected query",sel);
+
+        let sel1=document.querySelector('.nav>li');
+        console.log("selected query",sel1);
+        </script>
+</body>
+
+</html>

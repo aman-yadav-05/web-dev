@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in javaScript</title>
+</head>
+<body>
+    <h2>this is heading of the html</h2>
+
+    <script>
+        console.log('script is connected to the database.')
+        let obj={
+            name:'aman yadav',
+            age:20,
+            address:"janjgir"
+        }
+        console.log(obj);
+        let str=JSON.stringify(obj);
+        // str=str.toUpperCase(name);
+        str=str.replace('aman','chintu');
+        console.log(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query With Grid</title>
+    <style>
+        .border{
+            border: 2px solid rgb(51, 33, 33);
+            background-color: rgb(224, 193, 223);
+            padding: 5px;
+            border-radius: 4px;
+            /* margin: 3px; */
+        }
+        .container{
+            display: grid;
+            grid-gap: 0.4rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar navbar' 
+            'left left left right right'
+            'bottom bottom bottom bottom bottom';
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            justify-content: space-evenly;
+            grid-area: navbar;
+        }
+        .sectionLeft{
+            
+            grid-area: left;
+        }
+        .right{
+            grid-area: right;
+        }
+        .bottom{
+            grid-area: bottom;
+            text-align: center;
+            font-style: italic;
+        }
+        @media only screen and (max-width:376px)  {
+            .container{
+                background-color: red;
+                grid-template-areas: 
+                'navbar navbar navbar navbar navbar' 
+            'left left left left left'
+            'right right right right right'
+            'bottom bottom bottom bottom bottom';
+            }
+        }
+        @media only screen and (min-width:376px) and (max-width:414px) {
+            .container{
+                background-color: rgb(14, 255, 243);
+                grid-template-areas: 
+                'navbar navbar navbar navbar navbar' 
+            'left left left left left'
+            'right right right right right'
+            'bottom bottom bottom bottom bottom';
+             
+            }.bottom{
+                display: none;
+            }
+        }
+        @media only screen and (min-width:414px) and (max-width:820px) {
+            .container{
+                background-color: rgb(80, 211, 54);
+                grid-template-areas: 
+                'navbar navbar navbar navbar navbar' 
+            'left left left left left'
+            'right right right right right'
+            'bottom bottom bottom bottom bottom';
+            }
+           
+        }
+        @media only screen and (min-width:820px) and (max-width:1280px) {
+            .container{
+                background-color: rgb(223, 204, 96);
+            }
+        }
+        @media only screen and (min-width:1280px) and (max-width:1800px) {
+            .container{
+                background-color: rgb(4, 0, 255);
+            }
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar border">
+            <div class="utilities" id="id1">Home</div>
+            <div class="utilities" id="id2">About us</div>
+            <div class="utilities" id="id3">Contact us</div>
+            <div class="utilities" id="id4">Courses</div>
+            <div class="utilities" id="id5">Fees</div>
+        </nav>
+        <section class="sectionLeft border">
+            <div class="insideSecLeft ">
+                <h2>Our courses offered with huge discount offered!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio explicabo esse, fuga tenetur, laboriosam optio ullam culpa distinctio necessitatibus, impedit illum doloremque. Corrupti!</p>
+            </div>
+        </section>
+        <aside class="right border">
+            <h2>This is in the right side of the section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi dignissimos quod, molestias explicabo aperiam officia mollitia voluptatibus reiciendis natus nemo praesentium ipsa.</p>
+        </aside>
+        <footer class="bottom border">&copy; All Rights reserved pdxAman 2022</footer>
+    </div>
+        
+    
+</body>
+</html>

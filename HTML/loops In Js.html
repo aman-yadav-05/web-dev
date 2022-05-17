@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in javaScript</title>
+</head>
+<body>
+    <h4>This is heading of the loops in javaScript</h4>
+    <script>
+        // first of all we will check the classic for loop
+        let a=1;
+        console.log(`loop started here!`);
+        for (let i = 0; i <5; i++) {
+            console.log(i);
+        }
+
+        // now let's see foreach loop
+        let name=["aman","nilima","prerna","ebenezer","abhay"];
+        name.forEach(element => {
+            console.log("Hello, "+element);
+        });
+
+        //for of loop
+        for(element of name){
+            console.log("hello,"+element+" welcome to javaScript with new for of loop.")
+        }
+
+        // for in loop
+        let student={
+            name:"aman",
+            roll:23,
+            address:"netaji chowk behind jay bharat school janjgir."
+        }
+        for (const key in student) {
+           console.log(`the ${key} of student is ${student[key]}`);
+        }
+
+        // while looop
+        let z=0
+        while (z<3) {
+            console.log(`${z} is less than 3`);
+            z++;
+        }
+
+        // do while loop this loop is executed at least once.
+        let x=0
+        do {
+            console.log(`${x} is less than 3`);
+            x++;
+        } while (x<3);
+    </script>
+</body>
+</html>

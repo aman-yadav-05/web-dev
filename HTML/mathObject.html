@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object in javaScript</title>
+    <style>
+        .h1{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the heading of the site till now we are very well aware about this .XD</h1>
+
+    <script>
+        console.log('script is connected!');
+        console.log(Math);
+
+        // we have so many math function in javaScript let us counter them one by one
+        // first let us see how can we type the specific value with math object
+
+        console.log(Math.PI);
+        console.log(Math.E);
+        console.log(Math.sqrt(16));
+
+        // we can also find the maximum or minimum values in the max and min fn let's see an example?
+        console.log("the maximum among this numbers is 1 8 3 5 2 : ",Math.max(1,8,3,5,2));
+        console.log("the minimum among this numbers is 1 8 3 5 2 : ",Math.min(1,8,3,5,2));
+
+        // let us create random this is very important. By default .Random will create random no. between 0 and 1
+        // so we can use this formula to create aur own range where a is lower range and b is the highest range. 
+        a=10;
+        b=20;
+        // let rand=a+(b-a)*Math.round(Math.random());use round outside the whole equation.
+        let rand=Math.round(a+(b-a)*Math.random());
+        console.log('the random number between 10 and 20 is '+rand);
+
+        // there are also two fun. floor and ceil ceil gives you upper value and floor gives you lower value 2.3 ceil will be 3 and floor will be 2
+        // we can use pow to get the power val lieke 2 power 3
+        console.log(Math.pow(2,3)) //that is 8.
+    </script>
+</body>
+</html>

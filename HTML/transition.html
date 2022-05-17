@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition In CSS</title>
+    <style>
+        body{
+            background-color: black;
+            color: whitesmoke;
+        }
+        h3{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            font-size: 20px;
+            display: flex;
+            border: 2px solid red;
+            width: 300px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            transition-duration: 0.1s;
+            margin: 4px;
+        }
+        #box:hover{
+            /* no offset in x and y is set so that we can get glow in allside of box */
+            box-shadow: 0 0 20px lightcyan;
+            text-shadow: 0 0 20px yellow;
+        }
+        #box:active{
+            background-color: white;
+            color: black;
+            font-size: 22px;
+        }
+        /* #box: */
+    </style>
+</head>
+<body>
+    <h3>In this html file I am practicing the CSS Transition</h3>
+    <div class="container">
+        <div id="box">
+            We will try to give this a glow when this box get hovered.
+        </div>
+        <div id="box">
+            We will try to give this a glow when this box get hovered.
+        </div>
+        <div id="box">
+            We will try to give this a glow when this box get hovered.
+        </div>
+        <div id="box">
+            We will try to give this a glow when this box get hovered.
+        </div>
+        <div id="box">
+            We will try to give this a glow when this box get hovered.
+        </div>
+    </div>
+</body>
+</html>

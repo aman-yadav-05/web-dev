@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .item{
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid darkblue;
+            background-color: cadetblue;
+            display: none;
+        }
+        /* now we will write some media query so that when the site is visited on different platforms it can change it items accordingly */
+        @media only screen and (max-width: 250px) {
+            #item1{
+                   display: block;
+                   background-color: rgb(148, 230, 123);
+                   color: black;
+                   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+        @media only screen and (min-width:250px) and (max-width: 500px) {
+            #item2{
+                   display: block;
+                   background-color: rgb(167, 86, 162);
+                   color: black;
+                   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+        @media only screen and (min-width: 500px) and (max-width:1000px) {
+            #item3  {
+                   display: block;
+                   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                   background-color: aqua;
+                   color: black;
+            }
+        }
+        @media only screen and (min-width: 1000px) and (max-width:1250px) {
+            #item4{
+                   display: block;
+                   background-color: rgb(230, 165, 122);
+                   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                   color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">Device name Redmi note 9</div>
+        <div class="item" id="item2">Device name MI note pad</div>
+        <div class="item" id="item3">Device name mi pc</div>
+        <div class="item" id="item4">Device name ultra wide screen pc </div>
+    </div>
+</body>
+</html>

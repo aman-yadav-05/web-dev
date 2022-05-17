@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function and Lexical this</title>
+
+</head>
+
+<body>
+    <h2>this is heading of arrow function => and lexical this.</h2>
+    <script>
+        console.log("javaScript is connected!");
+
+        // let us write a greet function.
+        setInterval(() => {
+            console.log("2 sec passed until you opened the site!")
+        }, 2000);
+
+        let object = {
+            name: ["aman", "nilima", "prerna"],
+            present() {
+                this.name.forEach((stud) => { console.log("hello, " + stud+ " all the best for your presentation."); }
+                );
+            }
+        }
+        let arr=[2,4,6,8,10];
+        arr.forEach((element)=>{
+            document.write(element+" ")
+        });
+        object.present();
+    </script>
+</body>
+
+</html>

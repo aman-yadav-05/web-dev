@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text shadow box shadow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container{
+        display: flex;
+        /* margin: 2px; */
+        /* border: 2px solid; */
+    }
+    .box{
+        font-family: 'Oooh Baby', cursive;
+        text-align: justify;
+        margin: 2px 10px;
+        padding: 2px;
+        /* border: 2px solid; */
+        background-color: black;
+        color: azure;
+        /* box-shadow: 2px 2px red; */
+
+        /* box-shadow: offset-x offset-y blur-radius color ; */
+        /* box-shadow: 2px 2px 5px red;s */
+        /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+        box-shadow: 2px 3px 5px green;
+        /* this is box shadow  */
+    }
+    /* let's add some text shadow in the heading */
+    h4{
+        font-family: 'Roboto Slab', serif;
+        text-shadow: 2px 2px 5px rgb(228, 182, 182);
+        text-shadow: 1px 1px red;
+        /* this is the syntax for the text shadow in the heading */
+    }
+
+    /* we can use box shadow and text shadow when we want to see soome box or image or other things which are hidden due to the background by adding some shadow on them we can see them very easiyly and they seem so professional.  */
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <h4>this is  heading one of the box one</h4>
+            <p class="first">this is the paragraph of the first box . i dont know what should I write but I needed some content inside the paragraph that's why I wrote random things.</p>
+        </div>
+        <div class="box" id="box2">
+            <h4>this is heading of the second box</h4>
+            <p class="second"> this is the paragraph of second box. even in this i dont know what to write but I still wrote something this is just for practice lets see how it is looking.</p>
+        </div>
+        <div class="box" id="box3">
+            <h4>this is the heading of third box</h4>
+            <p class="third">this is paragraph of third box. We used class name "third" for this p tag and we will style this by writing .third so that the style will only target the specific class i.e. third. </p>
+        </div>
+        <div class="box" id="box4">
+            <h4>this is the heading of fourth box.</h4>
+            <p class="fourth">This is the paragraph of fourth box. Let see what we can write here also lets use the emmet abbreviation Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate perferendis debitis sint vero deserunt rem ratione officiis nemo facere dolorem optio omnis, quibusdam maiores minus, nostrum, nesciunt porro necessitatibus ad.</p>
+        </div>
+    </div>
+</body>
+</html>

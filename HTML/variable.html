@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+
+<style>
+    :root {
+        --primaryColor: rgb(248, 44, 248);
+        --secondaryColor: yellow;
+        --thirdColor: green;
+    }
+
+    h2 {
+        background-color: var(--primaryColor);
+        color: var(--secondaryColor);
+    }
+
+    .content {
+        display: flex;
+        color: var(--thirdColor);
+        border: 2px solid var(--primaryColor);
+        justify-content: space-evenly;
+        padding: 2px 3px;
+    }
+
+    .var {
+        border: 2px solid var(--secondaryColor);
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .container {
+        /* display: inline-flex; */
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+    <p>Here we will learn how to use variable so that we can use them for more elements and change anything for all
+        without changing them one by one we can change the characteristic of variable and that will be applied in each
+        and everywhere wherever it is used.</p>
+    <div class="container">
+        <h2>This is heading of the variable site.</h2>
+        <div class="content">This is the content which is inside the container
+            <div class="var" id="var-1">This is the first variable.</div>
+            <div class="var" id="var-2">This is the second variable.</div>
+            <div class="var" id="var-3">This is the third variable.</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

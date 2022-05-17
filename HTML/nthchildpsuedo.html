@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo selectors</title>
+    <style>
+        body {
+            /* text-align: center; */
+            border: 2px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            width: 200px;
+            margin: auto;
+        }
+
+        li {
+            text-align: center;
+            list-style: none;
+        }
+
+        input[type='password'] {
+            background-color: rgb(255, 255, 255);
+            /* color: black; */
+        }
+
+        input[type='text'] {
+            border: 2px solid red;
+        }
+
+        input[type='email'] {
+            border: 2px solid green;
+        }
+
+        a[target] {
+            border: 2px solid blue;
+        }
+
+        a[target='_self'] {
+            border: 2px solid yellow;
+        }
+
+        li:nth-child(2) {
+            color: cyan;
+        }
+
+        li:nth-child(2n) {
+            color: red;
+        }
+
+        li:nth-child(2n+1) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://pdxaman05.blogspot.com" target="_blank"> Go to My Website </a></h1>
+        <h1><a href="http://google.com" target="_self"> go to google </a></h1>
+        <form action="" class="formcontra">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" placeholder="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item no 1</li>
+            <li class="item" id="item2">item no 2</li>
+            <li class="item" id="item3">item no 3</li>
+            <li class="item" id="item4">item no 4</li>
+            <li class="item" id="item5">item no 5</li>
+            <li class="item" id="item6">item no 6</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

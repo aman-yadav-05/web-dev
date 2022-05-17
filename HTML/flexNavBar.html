@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        .navbar{
+            border: 2px solid;
+            display: flex;
+            /* justify-content: space-around; */
+            justify-content: center;
+        }
+        .items{
+            border: 2px solid blueviolet;
+            margin: 2px;
+        }
+        .items:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            background-color: gray;
+        }
+        #nav4{
+            /* flex-direction: row-reverse; */
+            position: absolute;
+            right: 10px;
+
+        }
+        #nav1,#nav2,#nav3{
+            justify-content: space-evenly;
+        }
+        #nav0{
+            border: none;
+            position: absolute;
+            left: 10px;
+            /* width: 10px;
+            height: 10px; */
+        }
+        #nav0 img{
+            border: none;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="items" id="nav0"><img src="projects/bg.png" alt=""></div>
+        <div class="items" id="nav1">home</div>
+        <div class="items" id="nav2">course</div>
+        <div class="items" id="nav3">payment</div>
+        <div class="items" id="nav4">contact us</div>
+    </div>
+</body>
+</html>

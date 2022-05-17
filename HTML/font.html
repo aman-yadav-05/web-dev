@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet"> -->
+
+    <!-- to write internal css use style element as shown below it wont need to link other css file -->
+    <style>
+        p,
+        em {
+            color: red;
+            border: 2px solid rgb(148, 148, 228);
+            /* i am typing the comments in css by shortcut ctrl + front slash  */
+            /* font-family: 'Montagu Slab', serif; */
+            /* font-variant: initial; */
+        }
+
+        h2 {
+            color: rgb(231, 117, 203);
+            /* font-style: italic; */
+        }
+
+        strong {
+            /* font-style: italic; */
+        }
+
+        /* span {
+             font-family: 'Estonia', cursive;;
+        } */
+        #try{
+            color: green;
+            /* border-style: darkblue; */
+            /* font-style: normal; */
+            /* font-variant-caps: small-caps; */
+            /* if we give two or more operation to perform in the style sheet than the last command which was given will be executed. */
+            border-style: dotted;
+            /* like here we gave two border style one is of dotted and then double line so our html file will take the double line as a command and will ignore the above styles  */
+            border-style: double ;
+
+        }
+        #ano{
+            background-color: silver;
+            border-style: double;
+            border-color: black;
+            color: rgb(216, 166, 4);
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h2>Experimenting with fonts</h2>
+    <p>Here we are going to see how <strong>fonts</strong> works with css in internal accessing css</p>
+    <p>Lets now try do we need to diffrent link to get two <span>diffferent</span> fonts in the same HTML file</p>
+    <span id="try">We are xperimenting with font in div with specific id </span> <br>
+    <span id="ano">We're again going to try  another example about the font with another id whose name is ano.</span>
+</body>
+
+</html>
