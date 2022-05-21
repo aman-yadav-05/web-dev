@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ajax</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+        <h2>bootstrap used.</h2>
+		ajax stands for asynchrnos javascript and xml, modern website uses json
+		instead of xml ajax helps in fetching data asynchrnously wihtout
+		interferring the existing page. no page reload/refresh. it saves network
+		bandwidth.
+		<p>why to use ajax.</p>
+		<ul>
+			<li>no page reload refresh</li>
+			<li>
+				instead of reloadin whole page we just need to send the small change
+				request and itll change the small area only. thats why itll save the
+				bandwidth
+			</li>
+			<li>it is user interactive</li>
+		</ul>
+		<p>how ajax works</p>
+		<ul>
+			<li>
+				ajax uses XMLHttpRequest also known as xhr object to achieve this it is
+				an inbuilt object in js pure js is known as vanilla js pure js===vanilla
+				js wihtout importing any lib etc.
+			</li>
+			<li>modern website uses json instead of xml for data transfer</li>
+			<li>
+				data can be trasnsferred in any format and protocol (not always https
+				necessarily) for format .txt .html .json etc.
+			</li>
+		</ul>
+        <h5>we have checked the get request</h5>
+        <span>check the fake json data site for fake json to play with json</span>
+
+		<button type="button" id="fetchBtn" class="btn btn-primary">fetch data</button>
+		<button type="button" id="popBtn" class="btn btn-secondary">pop data</button>
+		<button type="button" class="btn btn-success">Success</button>
+
+        <div class="container">
+            <h1>employee list</h1>
+            <ul class="list">
+
+            </ul>
+        </div>
+
+		<script src="/javaScript/ajax.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+			integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
