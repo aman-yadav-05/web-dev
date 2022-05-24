@@ -18,7 +18,7 @@ function listner(){
             let str="";
             let vegetableList=document.getElementById('vegetableList');
             for(key in obj){
-                str += `<li>${obj[key]}</li>`;
+                str += `<li>${obj.name}</li>`;
             }
             vegetableList.innerHTML=str;
         } else {
@@ -41,7 +41,7 @@ function flistner(){
         if (this.status===200) {
             let obj=JSON.parse(this.responseText);
             console.log(obj);
-            let fruitstr=`<li>${obj}</li>`;
+            let fruitstr=`<li>${obj.name}</li>`;
             let fruitList=document.getElementById('fruitList');
         
             fruitList.innerHTML= fruitstr;
