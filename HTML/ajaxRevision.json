@@ -1,0 +1,28 @@
+[{
+    "name":"IndiGo",
+    "capacity":2454
+},
+{
+    "name":"Air India",
+    "capacity":25512
+},
+{
+    "name":"Vistara",
+    "capacity":98175
+},
+{
+    "name":"Etihad Airways",
+    "capacity":3249
+},
+{
+    "name":"AirAsia India",
+    "capacity":54164
+},
+{
+    "name":"Qatar airway",
+    "capacity":6565646
+},
+{
+    "name":"TruJet",
+    "capacity":5465644
+}]
