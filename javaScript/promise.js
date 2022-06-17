@@ -9,14 +9,14 @@ const subjects = [
 ]
 
 function addsub(subject) {
-    return new Promise(function(resolve,reject){
+    return new Promise(function (resolve, reject) {
         setTimeout(() => {
             subjects.push(subject);
             // callback();
-            error=false;
-            if(!error){
+            error = false;
+            if (!error) {
                 resolve();
-            }else{
+            } else {
                 reject();
             }
             console.log("subject is added.")
@@ -35,11 +35,14 @@ function getList() {
     }, 1000);
 }
 
-let newSubject = { name: "javaScript", teacher: "NA" }
-addsub(newSubject).then(getList).catch(function(){
+let newSubject = { name: "javaScript", teacher: "NA" };
+let newSubject2 = { name: "partial diffrential equation", teacher: "ds singh" };
+addsub(newSubject);
+addsub(newSubject2).then(getList).catch(function () {
     conosle.log("some error occured.")
 });
 
-// the function inside the then is resolve function and the function inside the catch is reject function 
+
+// the function inside the then is resolve function and the function inside the catch is reject function
 
 // then(resolve) , catch(reject )
